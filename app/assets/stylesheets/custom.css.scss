@@ -5,13 +5,14 @@
 * {
 	text-decoration: none;
 	color: black;
+	
 }
 
-// .wrapper {
-// 	max-width: 100%;
-// 	max-height: 100%;
-// 	background-color: green;
-// }
+.wrapper {
+	height: 1200px;
+	background-color: #51d0ff;
+	padding: 6%;
+}
 
 // .content {
 // 	max-width: 95%;
@@ -31,16 +32,22 @@
 // }
 
 .new {
-	margin: 5% auto;
-	background-color: blue;
+	// margin: 5% auto;
+	margin-bottom: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #00bd93;
 	width: 35%;
 	height: 200px;
 	border: 1px solid black;
 }
 
 .lists {
-	margin: 5% auto;
-	background-color: blue;
+	// margin: 5% auto;
+	margin-bottom: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #00bd93;
 	width: 35%;
 	height: 200px;
 	border: 1px solid black;
