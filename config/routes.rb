@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
 
-	root "todo_list#home"
-	get "new" => "todo_list#new"
-	get "index" => "todo_list#index"
-	get "show" => "todo_list#show"
-	get "edit" => "todo_list#edit"
+	root "todo_lists#home"
+	get "new" => "todo_lists#new"
+	post "new" => "todo_lists#create"
+	get "index" => "todo_lists#index"
+	get "show" => "todo_lists#show"
+	get "edit" => "todo_lists#edit"
+	get "update" => "todo_lists#update"
+	resources :todo_lists
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
