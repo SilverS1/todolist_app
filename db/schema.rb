@@ -11,12 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160213093920) do
+ActiveRecord::Schema.define(version: 20160216235840) do
 
   create_table "todo_lists", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
     t.string   "title"
+    t.string   "list_item_1"
+    t.string   "list_item_2"
+    t.string   "list_item_3"
+    t.string   "list_item_4"
+    t.string   "list_item_5"
+    t.string   "list_item_6"
+    t.string   "list_item_7"
+    t.string   "list_item_8"
+    t.string   "list_item_9"
+    t.string   "list_item_10"
+    t.string   "list_item_12"
+    t.string   "list_item_13"
+    t.string   "list_item_15"
+    t.string   "list_item_16"
+    t.string   "list_item_17"
+    t.string   "list_item_18"
+    t.string   "list_item_19"
+    t.string   "list_item_20"
+    t.string   "list_item_11"
+    t.string   "list_item_14"
   end
 
 end

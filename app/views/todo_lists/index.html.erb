@@ -1,1 +1,22 @@
-<p>The Lovely Index</p>
+<%= provide(:title, "Index") %>
+<%= link_to "Back", root_path %>
+<div class = "index-wrapper">
+
+	<h1 class = "index-title">List Of Lists</h1>
+	<div class = "index-content">
+
+		<p class = "index-new-link">
+			<%= link_to "New List", new_path %>
+		</p>
+
+		<div class = "index-of-lists">
+			<%= render @todo_lists %>
+			<%= will_paginate @todo_lists %>
+		</div>
+	
+	</div>
+
+</div>
+
+
+

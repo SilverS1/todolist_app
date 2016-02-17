@@ -1,0 +1,7 @@
+<p>
+
+	<li class = "todo-list-title"><%= link_to todo_list.title, todo_list %></li>
+	<li class = "todo-list-edit"><%= link_to "Edit", edit_todo_list_path(id: todo_list.id) %></li>
+	<li class = "todo-list-delete"><%= link_to "Delete", todo_list, method: :delete, data: {confirm: "You sure?"} %></li>
+	
+<p>

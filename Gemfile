@@ -13,6 +13,7 @@ gem 'arel'
 gem 'bcrypt'
 gem 'pry-byebug', platform: [:ruby_20]
 gem 'puma' # uses SSL to encrypt user names, passwords etc. 
+gem 'acts_as_list'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
