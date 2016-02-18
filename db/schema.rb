@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160216235840) do
+ActiveRecord::Schema.define(version: 20160218004209) do
 
   create_table "todo_lists", force: :cascade do |t|
     t.datetime "created_at",   null: false
@@ -37,6 +37,26 @@ ActiveRecord::Schema.define(version: 20160216235840) do
     t.string   "list_item_20"
     t.string   "list_item_11"
     t.string   "list_item_14"
+    t.boolean  "checkbox_1"
+    t.boolean  "checkbox_2"
+    t.boolean  "checkbox_3"
+    t.boolean  "checkbox_4"
+    t.boolean  "checkbox_5"
+    t.boolean  "checkbox_6"
+    t.boolean  "checkbox_7"
+    t.boolean  "checkbox_8"
+    t.boolean  "checkbox_9"
+    t.boolean  "checkbox_10"
+    t.boolean  "checkbox_11"
+    t.boolean  "checkbox_12"
+    t.boolean  "checkbox_13"
+    t.boolean  "checkbox_14"
+    t.boolean  "checkbox_15"
+    t.boolean  "checkbox_16"
+    t.boolean  "checkbox_17"
+    t.boolean  "checkbox_18"
+    t.boolean  "checkbox_19"
+    t.boolean  "checkbox_20"
   end
 
 end

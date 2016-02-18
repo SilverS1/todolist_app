@@ -5,23 +5,238 @@
 
 <p><%= link_to "Edit List", edit_todo_list_path(id: @todo_list.id) %></p>
 
-<li><%= @todo_list.list_item_1 %></li>
-<li><%= @todo_list.list_item_2 %></li>
-<li><%= @todo_list.list_item_3 %></li>
-<li><%= @todo_list.list_item_4 %></li>
-<li><%= @todo_list.list_item_5 %></li>
-<li><%= @todo_list.list_item_6 %></li>
-<li><%= @todo_list.list_item_7 %></li>
-<li><%= @todo_list.list_item_8 %></li>
-<li><%= @todo_list.list_item_9 %></li>
-<li><%= @todo_list.list_item_10 %></li>
-<li><%= @todo_list.list_item_11 %></li>
-<li><%= @todo_list.list_item_12 %></li>
-<li><%= @todo_list.list_item_13 %></li>
-<li><%= @todo_list.list_item_14 %></li>
-<li><%= @todo_list.list_item_15 %></li>
-<li><%= @todo_list.list_item_16 %></li>
-<li><%= @todo_list.list_item_17 %></li>
-<li><%= @todo_list.list_item_18 %></li>
-<li><%= @todo_list.list_item_19 %></li>
-<li><%= @todo_list.list_item_20%></li>
+<%= form_for(@todo_list) do |f| %>
+	
+	<% @checkbox_array = Array.new %>
+
+	<li>
+		<% unless @todo_list.list_item_1.blank? %>
+			<%= @todo_list.list_item_1 %>
+			<%= f.check_box :checkbox_1 %>
+			<% if @todo_list[:checkbox_1] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_2.blank? %>
+			<%= @todo_list.list_item_2 %>
+			<%= f.check_box :checkbox_2 %>
+			<% if @todo_list[:checkbox_2] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_3.blank? %>
+			<%= @todo_list.list_item_3 %>
+			<%= f.check_box :checkbox_3 %>
+			<% if @todo_list[:checkbox_3] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_4.blank? %>
+			<%= @todo_list.list_item_4 %>
+			<%= f.check_box :checkbox_4 %>
+			<% if @todo_list[:checkbox_4] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_5.blank? %>
+			<%= @todo_list.list_item_5 %>
+			<%= f.check_box :checkbox_5 %>
+			<% if @todo_list[:checkbox_5] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_6.blank? %>
+			<%= @todo_list.list_item_6 %>
+			<%= f.check_box :checkbox_6 %>
+			<% if @todo_list[:checkbox_6] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_7.blank? %>
+			<%= @todo_list.list_item_7 %>
+			<%= f.check_box :checkbox_7 %>
+			<% if @todo_list[:checkbox_7] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_8.blank? %>
+			<%= @todo_list.list_item_8 %>
+			<%= f.check_box :checkbox_8 %>
+			<% if @todo_list[:checkbox_8] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_9.blank? %>
+			<%= @todo_list.list_item_9 %>
+			<%= f.check_box :checkbox_9 %>
+			<% if @todo_list[:checkbox_9] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_10.blank? %>
+			<%= @todo_list.list_item_10 %>
+			<%= f.check_box :checkbox_10 %>
+			<% if @todo_list[:checkbox_10] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_11.blank? %>
+			<%= @todo_list.list_item_11 %>
+			<%= f.check_box :checkbox_11 %>
+			<% if @todo_list[:checkbox_11] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_12.blank? %>
+			<%= @todo_list.list_item_12 %>
+			<%= f.check_box :checkbox_12 %>
+			<% if @todo_list[:checkbox_12] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_13.blank? %>
+			<%= @todo_list.list_item_13 %>
+			<%= f.check_box :checkbox_13 %>
+			<% if @todo_list[:checkbox_13] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_14.blank? %>
+			<%= @todo_list.list_item_14 %>
+			<%= f.check_box :checkbox_14 %>
+			<% if @todo_list[:checkbox_14] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_15.blank? %>
+			<%= @todo_list.list_item_15 %>
+			<%= f.check_box :checkbox_15 %>
+			<% if @todo_list[:checkbox_15] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_16.blank? %>
+			<%= @todo_list.list_item_16 %>
+			<%= f.check_box :checkbox_16 %>
+			<% if @todo_list[:checkbox_16] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_17.blank? %>
+			<%= @todo_list.list_item_17 %>
+			<%= f.check_box :checkbox_17 %>
+			<% if @todo_list[:checkbox_17] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_18.blank? %>
+			<%= @todo_list.list_item_18 %>
+			<%= f.check_box :checkbox_18 %>
+			<% if @todo_list[:checkbox_18] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_19.blank? %>
+			<%= @todo_list.list_item_19 %>
+			<%= f.check_box :checkbox_19 %>
+			<% if @todo_list[:checkbox_19] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+	<li>
+		<% unless @todo_list.list_item_20.blank? %>
+			<%= @todo_list.list_item_20 %>
+			<%= f.check_box :checkbox_20 %>
+			<% if @todo_list[:checkbox_20] == true %>
+				<% @checkbox_array << true %>
+			<% else %>
+				<% @checkbox_array << false %>
+			<% end %>
+		<% end %>
+	</li>
+
+
+
+<%= f.submit  "Save list", class: "btn btn-primary", data: {disable_with: "Creating..."} %> 
+
+<% end %>
+
+<% if @checkbox_array.uniq.size == 1 && @checkbox_array.first == true %>
+	<p>You've completed this list!</p>
+	<%= link_to "Delete?", @todo_list, method: :delete, data: {confirm: "You sure?"} %>
+<% end %>
